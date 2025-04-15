@@ -1,6 +1,10 @@
 ### Repository for our paper: 
 # Visual-RAG: Benchmarking Text-to-Image Retrieval Augmented Generation for Visual Knowledge Intensive Queries
+
+![header](https://github.com/visual-rag/visual-rag/blob/main/site-images/header.png?raw=true)
+
 Arxiv https://arxiv.org/abs/2502.16636
+
 
 
 ## Annotation structure:
