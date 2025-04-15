@@ -1,4 +1,6 @@
-## Hi there 👋
+## Repository for our paper: 
+# Visual-RAG: Benchmarking Text-to-Image Retrieval Augmented Generation for Visual Knowledge Intensive Queries
+Arxiv https://arxiv.org/abs/2502.16636
 
 <!--
 **visual-rag/visual-rag** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
