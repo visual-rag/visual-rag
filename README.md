@@ -25,6 +25,22 @@ We do not redistribute the original inat21 dataset. Please collect the images ac
 
 Images used in Visual-RAG are under the **train** set of inat21.
 
+---
+
+## Update: v2 annotations
+
+We discovered errors in the v1 annotation files (that some rows contain "HOLD" as question but no meaningful actual question), due to version control issue.
+We have gone through another round of check and verification of the annotations, and uploaded the v2_anno.jsonl file.
+
+There is a new key in the v2 json object, "is_changed_v2", to denote how it is changed from v1. It has three possible values: "unchanged"; "updated_image_label" - the question-answer pair is not changed, but image labels are changed which will affect retrieval scores; "updated_qa" - the question-answer pair is changed, and image labels are also updated correspondingly.
+
+There are 278 rows unchanged, 61 rows updated_image_label, 35 rows updated_qa, total 374 rows remaining. (All v1 questions with "HOLD" are removed)
+
+We are really sorry for additional effort caused if you have already in-progress training or inference works with the erroneous v1 annotations.
+
+---
+
+
 <!--
 **visual-rag/visual-rag** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
