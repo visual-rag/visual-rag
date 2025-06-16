@@ -44,6 +44,8 @@ We are really sorry for additional effort caused if you have already in-progress
 
 We have evaluated the v2 dataset with Qwen2.5-VL-7B-Instruct, Phi-4-multimodal-instruct, InternVL3-8B, and GPT-4o
 
+（Random GT and 1-in-k results are average of 5 runs with different random seed for selecting images)
+
 |                     | Phi4  | Qwen2.5VL | InternVL3 | GPT4o |
 |---------------------|-------|-----------|-----------|-------|
 | Zeroshot (No Image) | 31.68 | 34.84     | 25.67     | 49.33 |
