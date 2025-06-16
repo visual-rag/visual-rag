@@ -40,6 +40,29 @@ We are really sorry for additional effort caused if you have already in-progress
 
 ---
 
+## Partial results with v2 annotations
+
+We have evaluated the v2 dataset with Qwen2.5-VL-7B-Instruct, Phi-4-multimodal-instruct, InternVL3-8B, and GPT-4o
+
+|                     | Phi4  | Qwen2.5VL | InternVL3 | GPT4o |
+|---------------------|-------|-----------|-----------|-------|
+| Zeroshot (No Image) | 31.68 | 34.84     | 25.67     | 49.33 |
+| One Random GT Image | 36.71 | 36.66     | 35.94     | *54.67* |
+|                     |       |           |           |       |
+| Retrieved topk=1    | 33.16 | 37.96     | 31.55     | 22.65 |
+| k=3                 | **34.22** | 39.44     | 37.3      | 38.5  |
+| k=5                 | 32.49 | 39.84     | 36.9      | 43.45 |
+| k=7                 | 32.49 | 38.99     | **38.24**     | 46.52 |
+| k=10                | 33.56 | 42.91     | 37.03     | 46.93 |
+| k=15                | **34.22** | 42.78     | 35.16     | 47.33 |
+| k=20                | 34.09 | **43.44**     | 37.97     | **50**    |
+|                     |       |           |           |       |
+| 1-in-k, k=3         | **35.59** | 41.38     | 36.90     | 45.58 |
+| k=5                 | 34.25 | **43.29**     | 34.12     | 49.13 |
+| k=7                 | 33.34 | 42.69     | **35.27**     | 50.92 |
+| k=10                | 33.34 | 41.37     | 33.48     | 51.74 |
+| k=15                | 32.77 | 43.10     | 34.20     | **52.21** |
+| k=20                | 33.36 | 42.06     | 34.71     | 51.72 |
 
 <!--
 **visual-rag/visual-rag** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
